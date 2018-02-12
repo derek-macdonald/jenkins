@@ -34,7 +34,6 @@ private configureJenkinsURL() {
 }
 
 private void configureSecurity() {
-    Jenkins.instance.disableSecurity()
     //this port is fixed so it can be configured in the security group
     Jenkins.instance.setSlaveAgentPort(50000)
 }
